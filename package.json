@@ -20,7 +20,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test:content": "node src/test/run-tests.js"
+    "test:content": "node test/run-tests.js"
   },
   "keywords": [],
   "author": "",
