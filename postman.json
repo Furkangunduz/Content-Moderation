@@ -1,0 +1,53 @@
+{
+    "info": {
+        "name": "Content Moderation API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Moderate Content",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "multipart/form-data"
+                    }
+                ],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "description",
+                            "value": "You are an idiot, and I will attack you!",
+                            "type": "text"
+                        },
+                        {
+                            "key": "link",
+                            "value": "http://malicious-site.com",
+                            "type": "text"
+                        },
+                        {
+                            "key": "image",
+                            "type": "file",
+                            "src": "sample_image.jpg"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:3000/api/moderate",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "moderate"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
