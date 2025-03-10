@@ -63,25 +63,6 @@ app.post('/api/moderate', upload.single('image'), async (req, res) => {
   }
 });
 
-app.post('/api/moderate', async (req, res) => {
-  const { text } = req.body;
-
-  if (!text) {
-    return res.status(400).json({ error: 'No text provided' });
-  }
-
-  try {
-    const moderationResult = await moderateContent(text);
-    if (moderationResult) {
-      return res.status(400).json({ error: moderationResult });
-    }
-    res.json({ message: 'Content is appropriate' });
-  } catch (error) {
-    console.error('Error during moderation:', error);
-    res.status(500).json({ error: 'Internal server error during content moderation' });
-  }
-});
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
