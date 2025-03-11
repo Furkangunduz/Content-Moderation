@@ -1,9 +1,3 @@
-# platforms
-
-- https://developers.google.com/safe-browsing/v4/get-started
-- https://sightengine.com/signup
-- https://aistudio.google.com/apikey
-
 # Content Moderation
 
 Content moderation API service that helps detect and filter inappropriate content, image, links built with Node.js and Express.
@@ -19,9 +13,11 @@ Content moderation API service that helps detect and filter inappropriate conten
 
 ## Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
-- Google AI API key (for advanced content moderation)
+- Node.js 
+- Api key and app name from https://developers.google.com/safe-browsing/v4/get-started
+- Sightengine keys from https://sightengine.com/signup
+- Google AI API key (for advanced content moderation) from https://aistudio.google.com/apikey
+
 
 ## Installation
 
