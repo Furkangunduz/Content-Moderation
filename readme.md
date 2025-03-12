@@ -4,12 +4,8 @@ Content moderation API service that helps detect and filter inappropriate conten
 
 ## Features
 
-- Content moderation for text
-- Bad words detection and filtering
-- Support for Turkish language
+- Content moderation for text inputs,images,and links
 - Integration with Google's Generative AI
-- RESTful API endpoints
-- Easy-to-use HTTP interface
 
 ## Prerequisites
 
